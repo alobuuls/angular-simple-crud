@@ -1,27 +1,124 @@
-# AngularCrudLs
+# 🚀 Angular Simple CRUD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+Aplicación desarrollada en **Angular 12** que implementa un sistema CRUD básico de empleados utilizando estado en memoria. Permite crear, editar, listar y eliminar registros de forma dinámica con Angular Forms.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## ⚙️ Requisitos del sistema
 
-## Code scaffolding
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 📦 **Node.js:** `v14.x` o `v16.x` *(preferiblemente `v24.13.0`)*
+- 📦 **npm:** `v6+`
+- 🅰️ **Angular CLI:** `v12.x`
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🔍 Verificar versiones instaladas
 
-## Running unit tests
+Ejecuta los siguientes comandos en la terminal:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+node -v
+npm -v
+ng version
+```
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Instalación del proyecto
 
-## Further help
+### 1️⃣ Clonar el repositorio
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone <URL_DEL_REPO>
+cd angular-simple-crud
+```
+
+### 2️⃣ Instalar dependencias
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Ejecutar el proyecto
+
+```bash
+ng serve
+```
+
+Luego abre en tu navegador:
+
+```bash
+http://localhost:4200
+```
+
+---
+
+## 🧠 Arquitectura del proyecto
+
+Este proyecto utiliza una estructura simple basada en un solo componente principal.
+
+### 📦 AppComponent
+
+Contiene toda la lógica del CRUD:
+
+- Lista de empleados en memoria
+- Formulario de creación y edición
+- Selección de registros
+- Eliminación de empleados
+
+---
+
+## ⚙️ Funcionalidades principales
+
+- ➕ Crear empleados
+- ✏️ Editar empleados
+- 📋 Listar empleados
+- ❌ Eliminar empleados
+- 🎯 Estado en memoria *(sin backend)*
+- 🎨 Interfaz desarrollada con Bootstrap
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- 🅰️ Angular 12
+- ⚡ TypeScript
+- 🎨 Bootstrap
+- 🧾 Angular Forms
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+src/
+├── app/
+│   ├── models/
+│   │   └── employee.ts
+│   ├── app.component.ts
+│   ├── app.component.html
+│   ├── app.component.css
+│   └── app.module.ts
+├── styles.css
+├── index.html
+```
+
+---
+
+## 🔥 Buenas prácticas implementadas
+
+- Two-way data binding (`ngModel`)
+- Separación de modelo (`Employee class`)
+- Lógica CRUD centralizada
+- UI reactiva simple
+- Código limpio y reutilizable
+
+---
+
+## 📄 Licencia
+
+Proyecto con fines educativos y de portafolio.
